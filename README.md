@@ -31,7 +31,18 @@ comment out any line ending // depth
 uncomment and line ending //color
 
 -----------------------------------------------
-## try image and video 
+## try a single image, list of images, webcam 
 
 1. image: simply replace `my_publisher.cpp.image` to `my_publisher.cpp`
-2. image: simply replace `my_publisher.cpp.webcam` to `my_publisher.cpp`
+```
+rosrun image_transport_tutorial my_publisher 2325 path/to/the/image.png
+```
+2. list: simply replace `my_publisher.cpp.folder` to `my_publisher.cpp`  
+remember to change the path to the folder in `my_publisher.cpp`
+```
+rosrun image_transport_tutorial my_publisher 2325 
+```
+3. webcam: simply replace `my_publisher.cpp.webcam` to `my_publisher.cpp`
+```
+rosrun image_transport_tutorial my_publisher 2325 0
+```
